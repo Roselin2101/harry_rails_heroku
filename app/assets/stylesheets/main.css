@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    padding: 24px;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.table-no-border {
+    border-collapse: collapse;
+}
+
+.house-gryffindor {
+    color: #740001;
+    font-weight: 700;
+}
+
+.house-hufflepuff {
+    color: #946b2d;
+    font-weight: 700;
+}
+
+.house-ravenclaw {
+    color: #0e1a40;
+    font-weight: 700;
+}
+
+.house-slytherin {
+    color: #1a472a;
+    font-weight: 700;
+}
+
+.house-pukwudgie {
+    color: #372e29;
+    font-weight: 700;
+}
+
+.house-thunderbird {
+    color: #d3a625;
+    font-weight: 700;
+}
+
+.house-horned-serpent {
+    color: #2a623d;
+    font-weight: 700;
+}

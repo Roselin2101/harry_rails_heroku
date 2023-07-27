@@ -1,0 +1,39 @@
+<h1 class="text-center">Harry Potter Characters</h1>
+<br>
+<table class="table table-striped table-bordered table-no-border">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>House</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.name %></td>
+        <td><%= character.location %></td>
+        <td>
+          <% case character.house %>
+            <% when "Gryffindor" %>
+              <span class="house-gryffindor"><%= character.house %></span>
+            <% when "Hufflepuff" %>
+              <span class="house-hufflepuff"><%= character.house %></span>
+            <% when "Ravenclaw" %>
+              <span class="house-ravenclaw"><%= character.house %></span>
+            <% when "Slytherin" %>
+              <span class="house-slytherin"><%= character.house %></span>
+            <% when "Thunderbird" %>
+              <span class="house-thunderbird"><%= character.house %></span>
+            <% when "Pukwudgie" %>
+              <span class="house-pukwudgie"><%= character.house %></span>
+            <% when "Horned Serpent" %>
+              <span class="house-horned-serpent"><%= character.house %></span>
+            <% else %>
+              <span><%= character.house %></span>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
